@@ -79,6 +79,9 @@ nav ul {
   font-family: "Pattaya", sans-serif;
   font-weight: 400;
 }
+h1 {
+  font-size: 4rem;
+}
 
 .active {
   border-radius: 5rem;
@@ -99,7 +102,6 @@ nav ul {
   min-height: 90vh;
   margin: 0px 9rem;
   button {
-    width: 50%;
     border-radius: 4rem;
     &:hover {
       opacity: 0.8;

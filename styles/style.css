@@ -104,6 +104,10 @@ nav ul {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 .active {
   border-radius: 5rem;
   padding: 1rem 2rem;
@@ -128,7 +132,6 @@ nav ul {
 }
 
 .hero button {
-  width: 50%;
   border-radius: 4rem;
 }
 

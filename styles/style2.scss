@@ -38,16 +38,6 @@ a {
   color: black;
   text-decoration: none;
 }
-button {
-  padding: 2rem 3rem;
-  background: rgb(249, 168, 38);
-  border: none;
-  color: white;
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: background 0.5s ease-in-out;
-  font-family: "MuseoModerno", cursive;
-}
 
 /* Nav Section With HERO */
 
@@ -90,5 +80,97 @@ nav ul {
   &:hover {
     opacity: 0.7;
     pointer-events: pointer;
+  }
+}
+
+// HEADER-SECTION
+header,
+form {
+  display: flex;
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+form input,
+form button {
+  border: none;
+  padding: 0.5rem;
+  background: rgb(249, 168, 38);
+  color: white;
+  font-size: 3rem;
+}
+form button {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    background: white;
+    color: rgb(249, 168, 38);
+  }
+}
+
+// Todo
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  min-width: 30%;
+}
+.todo {
+  background: rgba(233, 233, 233, 0.972);
+  color: black;
+  font-size: 3rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.8s ease;
+  li {
+    flex: 1;
+    font-size: 2.5rem;
+    padding: 0.5rem 2rem;
+  }
+}
+.complete-btn,
+.trash-btn {
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.complete-btn {
+  background: rgb(80, 202, 80);
+}
+.trash-btn {
+  background: rgb(255, 88, 46);
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.remove {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+// MEDIA QUERIES
+@media only screen and (max-width: 930px) {
+  nav {
+    text-align: center;
+    #logo {
+      padding: 2rem;
+    }
   }
 }

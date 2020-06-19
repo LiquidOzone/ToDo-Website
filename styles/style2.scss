@@ -36,12 +36,14 @@ h5 {
 }
 a {
   color: black;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 
 /* Nav Section With HERO */
 
 .main-head {
+  background-color: white;
   color: black;
   position: sticky;
   top: 0px;
@@ -84,17 +86,29 @@ nav ul {
 }
 
 // HEADER-SECTION
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
 header,
 form {
   display: flex;
-  min-height: 20vh;
+
   justify-content: center;
   align-items: center;
   h1 {
     font-size: 4rem;
   }
 }
-
+.flex-wrap > header {
+  padding: 6rem 0;
+}
+.flex-wrap > form {
+  padding-bottom: 4rem;
+}
 form input,
 form button {
   border: none;
@@ -171,6 +185,21 @@ form button {
     text-align: center;
     #logo {
       padding: 2rem;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 405px) {
+  form {
+    padding: 0 8rem;
+    margin: auto;
+    input {
+      width: 100%;
+      margin: auto;
     }
   }
 }

@@ -52,6 +52,7 @@ button {
 /* Nav Section With HERO */
 
 .main-head {
+  background-color: white;
   color: black;
   position: sticky;
   top: 0px;
@@ -101,6 +102,7 @@ h1 {
   display: flex;
   min-height: 90vh;
   margin: 0px 9rem;
+  flex-wrap: wrap;
   button {
     border-radius: 4rem;
     &:hover {
@@ -139,5 +141,15 @@ h1 {
     #logo {
       padding: 2rem;
     }
+  }
+}
+@media only screen and (max-width: 846px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .text {
+    padding-top: 7rem;
   }
 }

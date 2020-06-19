@@ -59,6 +59,7 @@ button {
 
 /* Nav Section With HERO */
 .main-head {
+  background-color: white;
   color: black;
   position: -webkit-sticky;
   position: sticky;
@@ -129,6 +130,8 @@ h1 {
   display: flex;
   min-height: 90vh;
   margin: 0px 9rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .hero button {
@@ -184,6 +187,18 @@ h1 {
   }
   nav #logo {
     padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 846px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .text {
+    padding-top: 7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

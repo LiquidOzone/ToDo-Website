@@ -115,7 +115,7 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 20rem;
+  padding-top: 30rem;
   align-items: center;
   h2 {
     padding-bottom: 3rem;
@@ -143,13 +143,22 @@ h1 {
     }
   }
 }
-@media only screen and (max-width: 846px) {
+@media only screen and (max-width: 700px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
+  }
+  .text {
+    padding-top: 5rem;
   }
 }
 @media only screen and (max-width: 568px) {
   .text {
     padding-top: 7rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .text {
+    padding-bottom: 0;
+    height: 30vh;
   }
 }
